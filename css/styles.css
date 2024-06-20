@@ -172,6 +172,7 @@ nav .navigation ul li a:hover {
 .footer-top .container {
     display: flex;
     gap: 24px;
+    width: 100%;
   }
   
   .footer-text { margin-block: 40px 32px; }
