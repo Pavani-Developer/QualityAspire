@@ -9,6 +9,7 @@ class SpecialHeader extends HTMLElement {
                 <li><a href="/courses.html">Courses</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Contact</a></li>
+                <li><button class='register-btn'>Register</button></li>
             </ul>
             <img id="menu-btn" src="../images/menu.png" alt="">
         </div>
@@ -30,7 +31,7 @@ class SpecialHeader extends HTMLElement {
 
 class SpecialFooter extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+        this.innerHTML = `<footer class="footer has-bg-image" style="background-image: url('./images/footer-bg.png')">
 
     <div class="section footer-top">
       <div class="container">
@@ -144,7 +145,7 @@ class SpecialFooter extends HTMLElement {
             <ul class="grid-list">
 
               <li>
-                <img src="./images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="../images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
@@ -164,12 +165,12 @@ class SpecialFooter extends HTMLElement {
               </li>
 
               <li>
-                <img src="../images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="./images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
               <li>
-                <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="./images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
@@ -186,7 +187,7 @@ class SpecialFooter extends HTMLElement {
       <div class="container">
 
         <p class="copyright">
-          © Copyright 2022 | Youdemi Template | All Rights Reserved by codewithsadee
+          © Copyright 2022 | Quality Aspires| All Rights Reserved by Quality Aspires
         </p>
 
       </div>
