@@ -6,9 +6,9 @@ class SpecialHeader extends HTMLElement {
             <ul>
                 <i id="menu-close" class="fas fa-times"></i>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/courses.html">Courses</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="../html/courses.html">Courses</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
                 <li><button class='register-btn'>Register</button></li>
             </ul>
             <img id="menu-btn" src="../images/menu.png" alt="">
