@@ -248,6 +248,136 @@ nav .navigation ul li a:hover {
     background-image: linear-gradient(to right, #68e9e9 0%, #8b3deb 100%);
     transition: 0.3s;
 }
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    
+}
+.full-content{
+    background-image: url('../images/whychooseus_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.content {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.image {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Contact form*/
+
+.contact-page{
+    background-image: url('../images/contact\ us\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-heading{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contact-form,
+.contact-details {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+.contact-details{
+    align-items: center;
+    justify-content: center;
+}
+.contact-details p {
+    margin: 16px 0;
+    font-size: 1em;
+}
+
+.contact-details i {
+    font-size: 2em; 
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.contact-details h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+
+
+
+
 footer {
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 8, 48, 0.7)), url("../images/background2.jpg");
     background-size: cover;
@@ -582,6 +712,28 @@ main {
           .footer-text {
             margin-block: 20px 16px;
           }
+        }
+        .content-section {
+            flex-direction: column;
+            background-image: url('../images/whychooseus_background.jpg');
+        }
+        
+        .content-section.reverse {
+            flex-direction: column;
+        }
+        
+        .image, .content {
+            text-align: center;
+        }
+
+        .contact-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .contact-form,
+        .contact-details {
+            max-width: 100%;
         }
     }
 
