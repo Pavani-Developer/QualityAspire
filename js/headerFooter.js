@@ -9,7 +9,7 @@ class SpecialHeader extends HTMLElement {
                 <li><a href="../html/courses.html">Courses</a></li>
                 <li><a href="../html/about.html">About</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
-                <li><button class='register-btn'>Register</button></li>
+                <li><button class='register-btn'><a href = '../html/registerform.html'>Register</a></button></li>
             </ul>
             <img id="menu-btn" src="../images/menu.png" alt="">
         </div>

@@ -141,6 +141,10 @@ nav .navigation ul li .register-btn {
     color: white;
     cursor: pointer;
 }
+nav .navigation ul li .register-btn a{
+    text-decoration: none;
+    color: white;
+}
 
 nav .navigation ul li .register-btn:hover {
     background-image: linear-gradient(to right, #68e9e9 0%, #8b3deb 100%);
@@ -244,6 +248,10 @@ nav .navigation ul li a:hover {
     color: white;
     cursor: pointer;
     font-size: 16px;
+}
+.btn-container .explore-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .btn-container .explore-btn:hover {
@@ -632,6 +640,14 @@ img.course-detail-logo{
     #course-content li, #learning-outcomes li {
         margin-bottom: 8px;
     }
+}
+
+
+.registration-page h1{
+    margin-top: 130px;
+}
+.about-page h1{
+    margin-top: 130px;
 }
 /* Responsive adjustments */
 
