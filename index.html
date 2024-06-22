@@ -10,7 +10,7 @@
 </head>
 <body>
     <special-header></special-header>
-    <div id="home">
+    <div id="home" class="'slide-in">
         <h1>Embrace the journey of <span id="txt-color">Learning</span>, <span id="txt-color">Innovation</span>, and <span id="txt-color">Success</span> with us. <br>Your future in tech<br><span id="txt-color2">starts here!</span> </h1>
         <p>Unlock your potential and excel in tech with expert-led courses at <br><span id="para-color">Quality Aspires Software Training Institute!</span></p>
         <div class="btn-container">
@@ -20,7 +20,7 @@
     </div>
     
     <div class="full-content">
-    <div class="content-section">
+    <div class="content-section slide-in">
         <div class="content">
             <h2>Why Choose Us?</h2>
             <p>Our courses are designed to provide you with the skills you need to succeed in the tech industry. From beginner to advanced levels, we have something for everyone.</p>
@@ -35,7 +35,7 @@
     </div>
 
     <!-- New Section 2 -->
-    <div class="content-section reverse">
+    <div class="content-section reverse slide-in">
         <div class="content">
             <h2>Why Software training at Quality Aspires?</h2>
             <p>At Quality Aspires, our mission is to empower individuals through education and innovation. We strive to create a learning environment that fosters growth and success.<br><br>
@@ -62,7 +62,7 @@
     <div class="courses-container">
 
 
-        <div  class="course-card">
+        <div  class="course-card slide-in spin">
             <a href="../Courses/manual-testing.html">
             <img src="../images/Manual-Testing.png" alt="Manual Testing" class="course-logo">
             <h2>Manual Testing</h2>
@@ -71,7 +71,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/database-testing.html">
             <img src="../images/Database-Testing.jpg" alt="Database Testing" class="course-logo">
             <h2>Database Testing</h2>
@@ -80,7 +80,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/api-testing.html">
             <img src="../images/API-Testing.png" alt="API Testing" class="course-logo">
             <h2>API Testing (Postman)</h2>
@@ -89,7 +89,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/mobileapp-testing.html">
             <img src="../images/Mobile-App-Testing.jpg" alt="Mobile App Testing" class="course-logo">
             <h2>Mobile App Testing</h2>
@@ -98,7 +98,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/core-java.html">
             <img src="../images/Core-java.png" alt="Core Java" class="course-logo">
             <h2>Core Java</h2>
@@ -107,7 +107,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/selenium.html">
             <img src="../images/Selenium.jpg" alt="Selenium" class="course-logo">
             <h2>Selenium</h2>
@@ -117,7 +117,7 @@
 
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/test-ng.html">
             <img src="../images/Testngpng.png" alt="TestNG" class="course-logo">
             <h2>TestNG</h2>
@@ -127,7 +127,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/git.html">
             <img src="../images/Git.jpg" alt="Git" class="course-logo">
             <h2>Git</h2>
@@ -136,7 +136,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/jenkins.html">
             <img src="../images/jenkins.jpg" alt="Jenkins" class="course-logo">
             <h2>Jenkins</h2>
@@ -145,7 +145,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/rest-assured.html">
             <img src="../images/Rest-Assured.png" alt="RestAssured" class="course-logo">
             <h2>RestAssured</h2>
@@ -154,7 +154,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/cucumber.html">
             <img src="../images/cucumber-testing.png" alt="Cucumber" class="course-logo">
             <h2>Cucumber</h2>
@@ -163,7 +163,7 @@
         </div>
 
 
-        <div class="course-card">
+        <div class="course-card slide-in spin">
             <a href="Courses/jmeter.html">
             <img src="../images/Jmeter.png" alt="JMeter" class="course-logo">
             <h2>JMeter</h2>
@@ -209,5 +209,46 @@
 
     <special-footer></special-footer>
     <script src="./js/headerFooter.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slideInElements = document.querySelectorAll('#home h1 #txt-color');
+        const fadeInElements = document.querySelectorAll('.course-card, .contact-container, .footer-top');
+
+        const handleScroll = () => {
+            slideInElements.forEach(el => {
+                if (isInViewport(el)) {
+                    el.classList.add('slide-in');
+                    el.classList.remove('hidden-slide');
+                }
+            });
+
+            fadeInElements.forEach(el => {
+                if (isInViewport(el)) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hidden-fade');
+                }
+            });
+        };
+
+        const isInViewport = (element) => {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        slideInElements.forEach(el => el.classList.add('hidden-slide'));
+        fadeInElements.forEach(el => el.classList.add('hidden-fade'));
+
+        window.addEventListener('scroll', handleScroll);
+
+        handleScroll();
+    });
+</script>
+
+    
 </body>
 </html>

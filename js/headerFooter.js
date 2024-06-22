@@ -31,7 +31,7 @@ class SpecialHeader extends HTMLElement {
 
 class SpecialFooter extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<footer class="footer has-bg-image" style="background-image: url('./images/footer-bg.png')">
+        this.innerHTML = `<footer class="footer has-bg-image" style="background-image: url('../images/footer-bg.png')">
 
     <div class="section footer-top">
       <div class="container">
@@ -39,7 +39,7 @@ class SpecialFooter extends HTMLElement {
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./images/logo2.png" width="195" height="145" alt="Youdemi home">
+            <img src="../images/logo2.png" width="195" height="145" alt="Youdemi home">
           </a>
 
           <p class="title-sm footer-text">
@@ -50,25 +50,25 @@ class SpecialFooter extends HTMLElement {
 
             <li>
               <a href="#" class="social-link">
-                <img src="./images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
+                <img src="../images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link">
-                <img src="./images/twitter.svg" width="40" height="40" loading="lazy" alt="twitter">
+                <img src="../images/twitter.svg" width="40" height="40" loading="lazy" alt="twitter">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link">
-                <img src="./images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
+                <img src="../images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link">
-                <img src="./images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
+                <img src="../images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
               </a>
             </li>
 
@@ -150,27 +150,27 @@ class SpecialFooter extends HTMLElement {
               </li>
 
               <li>
-                <img src="./images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="../images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
               <li>
-                <img src="./images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="../images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
               <li>
-                <img src="./images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="../images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
               <li>
-                <img src="./images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="../images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 
               <li>
-                <img src="./images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="../images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover">
               </li>
 

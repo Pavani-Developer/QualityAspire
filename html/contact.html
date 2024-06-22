@@ -10,30 +10,37 @@
 </head>
 <body>
     <special-header></special-header>
-    <div>
-    <h1 id="contact-heading">Contact Us</h1>
-    <div class="contact-container">
-        <div class="contact-form">
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+    <div class="contact-page">
+        <h1 id="contact-heading-page">Contact Us</h1>
+        <div class="contact-container">
+            <div class="contact-details">
+                <i class="fas fa-envelope"></i>
+                <h2>General Enquiries</h2>
+                <p> Email: contact@qualityaspires.com</p>
+                <i class="fas fa-phone-alt"></i>
+                <h2>Call us</h2>
+                <p> Phone: +123 456 7890</p>
+                <i class="fas fa-map-marker-alt"></i> 
+                <h2>Our Office Address</h2>
+                <p>Location: 1234 Tech Street, Innovation City, Techland</p>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
         </div>
-        <div class="contact-details">
-            <p><i class="fas fa-envelope"></i> Email: contact@qualityaspires.com</p>
-            <p><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
-            <p><i class="fas fa-map-marker-alt"></i> Location: 1234 Tech Street, Innovation City, Techland</p>
-        </div>
-    </div>
-  </div>
+      </div>
     <special-footer></special-footer>
 
     <script src="../js/headerFooter.js"></script>
